@@ -35,7 +35,7 @@ function Message({ id, message, timestamp, email, photoURL, name }) {
           }
           className="hover:bg-discord_deleteIconBg p-1 ml-auto rounded-lg text-discord_deleteIconBg hover:text-white cursor-pointer"
         >
-          <TrashIcon className="h-6 opacity-0 group-hover:opacity-10 " />
+          <TrashIcon className="h-6 opacity-0 group-hover:opacity-100 " />
         </div>
       )}
     </div>
