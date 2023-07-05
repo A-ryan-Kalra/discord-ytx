@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+  .link {
+    @apply cursor-pointer font-semibold text-sm  text-white hover:underline;
+  }
+  .server-default {
+    @apply h-12 bg-discord_serverBg rounded-full flex justify-center
+    items-center cursor-pointer  hover:rounded-2xl  transition-all
+    duration-100 ease-in-out;
+  }
+  .icon {
+    @apply cursor-pointer h-6 text-white;
+  }
+}
+
+@layer utilities {
+  @variants responsive {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+      -ms-overflow-style: none; /* IE and Edge */
+      scrollbar-width: none; /* Firefox */
+    }
+  }
+}
